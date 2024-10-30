@@ -11,7 +11,7 @@
 	<groupId>com.openapi</groupId>
 	<artifactId>open-config</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<name>config</name>
+	<name>open-config</name>
 	<description>Demo project for Spring Boot</description>
 	<url/>
 	<licenses>
@@ -28,9 +28,21 @@
 	</scm>
 	<properties>
 		<java.version>11</java.version>
+        <!-- <spring-cloud.version>Hoxton.SR1</spring-cloud.version> -->
 	</properties>
+    <dependencyManagement>
+        <!-- <dependencies>
+            <dependency>
+                <groupId>org.springframework.cloud</groupId>
+                <artifactId>spring-cloud-dependencies</artifactId>
+                <version>${spring-cloud.version}</version>
+                <type>pom</type>
+                <scope>import</scope>
+            </dependency>
+        </dependencies> -->
+    </dependencyManagement>
 	<dependencies>
-		<dependency>
+        <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-data-jpa</artifactId>
         </dependency>
@@ -98,21 +110,16 @@
             <version>3.0.1-SNAPSHOT</version>
         </dependency>
         <dependency>
-            <groupId>com.api</groupId>
-            <artifactId>open-feign-client</artifactId>
-            <version>0.0.1-SNAPSHOT</version>
-        </dependency>
-        <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-thymeleaf</artifactId>
         </dependency>
 
-        <!--        <dependency>
+        <!-- <dependency>
             <groupId>org.springframework.security</groupId>
             <artifactId>spring-security-config</artifactId>
             <version>5.7.8</version>
             <type>jar</type>
-        </dependency>-->
+        </dependency> -->
         <dependency>
             <groupId>org.json</groupId>
             <artifactId>json</artifactId>
@@ -130,7 +137,7 @@
             <artifactId>hibernate-types-52</artifactId>
             <version>2.11.1</version> <!-- Check for the latest version on Maven Central -->
         </dependency>
-	</dependencies>
+    </dependencies>
 
 	<build>
 		<plugins>
@@ -140,5 +147,6 @@
 			</plugin>
 		</plugins>
 	</build>
+
 
 </project>
