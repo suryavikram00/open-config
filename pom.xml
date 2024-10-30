@@ -9,9 +9,9 @@
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
 	<groupId>com.openapi</groupId>
-	<artifactId>open-config</artifactId>
+	<artifactId>open-config-api</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<name>open-config</name>
+	<name>open-config-api</name>
 	<description>Demo project for Spring Boot</description>
 	<url/>
 	<licenses>
