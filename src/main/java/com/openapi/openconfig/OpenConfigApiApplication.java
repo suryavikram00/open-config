@@ -9,10 +9,10 @@ import org.springframework.context.annotation.Configuration;
 @SpringBootApplication
 // @EnableFeignClients(basePackages = "com.open.feign_client.inter_process_communication")
 @Configuration
-public class OpenConfigApplication {
+public class OpenConfigApiApplication {
 
 	public static void main(String[] args) {
-		SpringApplication.run(OpenConfigApplication.class, args);
+		SpringApplication.run(OpenConfigApiApplication.class, args);
 	}
 
 }
